@@ -1,0 +1,529 @@
+@charset "UTF-8";
+/* CSS Document */
+
+::selection {
+  background: #a2665f;
+  color:#ffffff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #a2665f;
+  color:#ffffff;/* Gecko Browsers */
+}
+
+.navbar-default .navbar-brand {
+	color:#a2665f !important;
+}
+
+.navbar-nav {
+	color:#a2665f !important;
+}
+
+
+.box a:hover {
+  outline: 0;
+	color: #a2665f !important;
+}
+
+.box a {
+  color: #333333 !important;
+}
+
+.box:hover {
+	border: 2px solid #a2665f;
+}
+
+.box {
+	border: 2px solid #ffffff;
+}
+
+.link {
+	color: #000000;
+}
+
+.link:hover {
+	color: #a2665f;
+}
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(163,102,95);
+    background-color: rgba(163,102,95, 1.0);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.case-study {
+	max-width:55rem;
+	text-align: left;
+	margin: 0 auto;
+	padding-top:2rem;
+	line-height: 2.2rem;
+	font-size:16px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+
+}
+
+.casestudy-headline {
+	color: #a2665f;
+	font-size: 20px;
+	margin-bottom: 5px;
+	
+}
+
+.casestudy-title {
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
+	color: #000000;
+	font-weight: 700;
+	margin-top:30px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.project-number {
+	font-family: 'poppins', sans-serif;
+	font-size: 100px;
+	opacity: 50%;
+	
+	
+}
+
+.embed-container {
+   height: 0;
+   width: 100%;
+   padding-bottom: 56.25%; /* play with this until right */
+   overflow: hidden;
+   position: relative;
+}
+
+.embed-container iframe {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.center {
+	margin:0 auto;
+	margin-bottom:15px;
+}
+
+.projectlist{
+	font-family: 'poppins', sans-serif !important;
+	font-size: 3.5em !important;
+	color: #000000 !important;
+	list-style-type: none !important;
+	padding-left: 0px !important;
+}
+
+.projectlist li {
+	margin-bottom: .5em !important;
+}
+
+.projectlist li a{
+	text-decoration: none !important;
+	color: #000000 !important;
+}
+
+.projectlist li a:hover {
+	text-decoration: underline !important;
+	color: #a2665f !important;
+}
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #f3f3f3;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+	.reveal-text {
+		font-size: 43px;
+		font-weight: 700;
+	}
+	
+	.project {
+		margin-bottom:40px;
+	}
+}
+
+@media only screen and (min-width: 320px) {
+.projectlist{
+	font-family: 'poppins', sans-serif !important;
+	font-size: 1.5em !important;
+	color: #000000 !important;
+	list-style-type: none !important;
+	padding-left: 0px !important;
+}
+
+.projectlist li {
+	margin-bottom: 1em !important;
+}
+	.reveal-text {
+		font-size: 45px;
+		font-weight: 700;
+	}
+	.project {
+		margin-bottom:40px;
+	}
+	
+}
+
+.maintext {
+	color:#000000;
+	position: relative;
+	text-decoration: none !important;
+}
+
+.maintext:hover::after {
+	content:'';
+    position:absolute;
+    width: 100%;
+    height: 0;    
+    left:0;
+    bottom: 1px;
+    border-bottom: 3px solid #a2665f;
+	color:#a2665f;
+	
+}
+
+.jumbotron-header {
+	background-image: url("../images/aboutme1-2.jpg");
+	background-size: cover;
+	height: 250px;
+	
+	
+}
+
+.img-circle-custom {
+	border-radius: 50%;
+	position: relative;
+	top: -70px;
+	
+}
+
+
+.well {
+	background-color:#033649 !important;
+	margin-top:40px;
+}
+
+
+/*TEXT REVEAL*/
+
+.reveal-text,
+.reveal-text:after {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal-text {
+  position: relative;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation-name: reveal-text;
+          animation-name: reveal-text;
+  color: #333;
+  white-space: nowrap;
+  cursor: default;
+  padding: 10px;
+}
+.reveal-text:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #033649;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  pointer-events: none;
+  -webkit-animation-name: revealer-text;
+          animation-name: revealer-text;
+}
+
+@-webkit-keyframes reveal-text {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes reveal-text {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+@-webkit-keyframes revealer-text {
+  0%, 50% {
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+  }
+  60%, 100% {
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  60% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+@keyframes revealer-text {
+  0%, 50% {
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+  }
+  60%, 100% {
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  60% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+.note {
+  position: fixed;
+  bottom: 1vh;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.note pre {
+  display: inline-block;
+}
+
+/*TEXT REVEAL 2*/
+
+.reveal-text2,
+.reveal-text2:after {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal-text2 {
+  position: relative;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation-name: reveal-text;
+          animation-name: reveal-text;
+  color: #333;
+  white-space: nowrap;
+  cursor: default;
+  padding: 10px;
+}
+.reveal-text2:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a2665f;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  pointer-events: none;
+  -webkit-animation-name: revealer-text;
+          animation-name: revealer-text;
+}
+
+@-webkit-keyframes reveal-text {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes reveal-text {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+@-webkit-keyframes revealer-text {
+  0%, 50% {
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+  }
+  60%, 100% {
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  60% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+@keyframes revealer-text {
+  0%, 50% {
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+  }
+  60%, 100% {
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  60% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+.note {
+  position: fixed;
+  bottom: 1vh;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.note pre {
+  display: inline-block;
+}
