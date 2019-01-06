@@ -1,5 +1,12 @@
 @charset "UTF-8";
+@import url("duet.css");
+
 /* CSS Document */
+
+html, body {
+  margin: 0;
+  font-family: poppins;
+}
 
 ::selection {
   background: #a2665f;
