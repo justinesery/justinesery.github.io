@@ -17,60 +17,51 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-<style>
-	p, h1,h2 {font-family: 'poppins', sans-serif;}
-</style>
 </head>
 
-<body>
- <nav class="navbar navbar-default">
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header" style="float: left;clear: left;">
-    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
-     <a class="navbar-brand" href="index.html">justine sery</a>
+<body id="bootstrap-overrides">
+ <div class="duet-bg-img">
+    <nav class="duet-navbar navbar navbar-default">
+    <div class="container-fluid"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header" style="float: left;clear: left;">
+      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> -->
+      <a class="navbar-brand" href="index.html">justine sery</a>
+      </div>
+      <!-- <div class="collapse navbar-collapse" id="myDefaultNavbar1"> --> 
+      <ul class="nav navbar-nav" style="margin-top:10px; float:right;">
+    <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+    </ul> 
+    
+    <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">home</a>
+      <a href="projects.html">projects</a>
+      <a href="aboutme.html">about</a>
+      <a href="images/justine_sery_resume.pdf" target="_blank">resume</a>
+    <!-- <a href="contact.html">contact</a>-->
     </div>
-     <!-- <div class="collapse navbar-collapse" id="myDefaultNavbar1"> --> 
-     <ul class="nav navbar-nav" style="margin-top:10px; float:right;">
-<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
-	 </ul> 
-	
-   <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="index.html">home</a>
-    <a href="projects.html">projects</a>
-    <a href="aboutme.html">about</a>
-    <a href="images/justine_sery_resume.pdf" target="_blank">resume</a>
-   <!-- <a href="contact.html">contact</a>-->
+    </div>
   </div>
-   </div>
-</div>
- </nav> 
-     
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  </nav> 
+ </div>
+ 
 
-  <div class="carousel-inner" style="max-height: 400px !important;">
-    <div class="item active">
-      <img src="images/duet1-1.jpg" alt="Duet UI">
-    </div>
-  </div>
-	</div> 
 	
-<div class="container"> 
+<div class="container-fluid"> 
   <div class="row">
-        	<div class="col-md-12 text-center">
-            	<h1 style="margin-bottom: 20px; color:#000000;">Duet POS User Interface</h1> 
+        	<div class="row">
+            	<h1 class="duet-header-main">Duet POS User Interface</h1> 
             </div>
 </div>
 </div>
  <div class="container">
-           <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-            	<p style="font-size: 16px;">Duet is a tablet point of sale system developed by ASI that draws on the company's 30 years of restaurant industry experience. I worked with the Product Manager on design elements and concepts to help create a user friendly and easy to learn experience. The software is used by multiple levels of restaurant staff who have a variety of expectations and needs for the software.</p>
-            	
-			</div>
-			 
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="project-number">01</div>
+        <div style="font-size: 16px;">Duet is a tablet point of sale system developed by ASI that draws on the company's 30 years of restaurant industry experience. I worked with the Product Manager on design elements and concepts to help create a user friendly and easy to learn experience. The software is used by multiple levels of restaurant staff who have a variety of expectations and needs for the software.</div>	
+      </div>
 		</div>
 </div>
 

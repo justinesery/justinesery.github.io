@@ -1,0 +1,36 @@
+.duet-header-main {
+    margin-bottom: 20px; 
+    color:black;
+    border-left: 20px solid blue;
+    padding-left: 5px;
+}
+
+.duet-bg-img {
+    background-image: url("../images/duet1-1.jpg");
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+.duet-navbar {
+    position: absolute;
+    top: 20px;
+}
+
+.project-number {
+    position: absolute;
+    top: -70px;
+    left: -20px;
+    font-size: 12px;
+}
+
+#bootstrap-overrides .duet-navbar{
+    /* background-color: rgba(255,255,255, 0); */
+    border-color: none;
+}
